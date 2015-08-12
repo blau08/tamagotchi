@@ -1,0 +1,33 @@
+body {
+  background-color: white;
+  text-align: left;
+  font-family: helvetica;
+}
+.container {
+  margin: 2em auto;
+}
+img {
+  height: 15em;
+  width: 15em;
+  margin: 3em;
+}
+.btn-div {
+  margin: 0 auto;
+}
+button {
+  height: 3em;
+  width: 5em;
+  margin: 1em 1em;
+}
+form {
+}
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+}
+h2, h3 {
+  font-weight: 200;
+}
+label {
+
+}

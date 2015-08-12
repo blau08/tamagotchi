@@ -1,0 +1,33 @@
+<h1>Tamagotchi!</h1>
+
+<ul>
+  <% Tamagotchi.all_pets().each() do |pet| %>
+  <li><%= pet.name() %>
+    <ul>
+      <li>Current Food Level:  <%= pet.food_level() %></li>
+      <li>Current Activity Level: <%= pet.activity_level() %></li>
+      <li>Current Sleep Level: <%= pet.sleep_level() %></li>
+    </ul>
+  </li>
+  <% end %>
+</ul>
+
+<form action="/action" method="post">
+  <label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox1" name="inlineCheckbox1" value="false"> Feed me
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox2" name="inlineCheckbox2" value="false"> Playtime
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox3" name="inlineCheckbox3" value="false"> Bedtime
+  </label>
+  <button type="submit">Submit</button>
+</form>
+
+<form action="/new_pet" method="post">
+  <label for="pet_name">Enter in a name for your new pet:</label>
+  <input id="pet_name" name="pet_name" type="text">
+
+  <button type="submit">Adopt Pet</button>
+</form>
